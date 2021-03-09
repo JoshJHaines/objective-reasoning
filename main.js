@@ -11,6 +11,10 @@ function getEmail(obj){
     return `${obj.firstName.toLowerCase()}.${obj.lastName.toLowerCase()}@codeimmersives.com`
 }
 
+function getPlaylistLength(obj){
+    return obj.songs.length
+}
+
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
 // └─────────────────────────────────────┘
