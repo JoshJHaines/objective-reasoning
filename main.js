@@ -7,6 +7,9 @@ function isAdmin(obj){
     } else return false
 }
 
+function getEmail(obj){
+    return `${obj.firstName}.${obj.lastName}@codeimmersives.com`
+}
 
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
