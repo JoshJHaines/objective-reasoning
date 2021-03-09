@@ -8,7 +8,7 @@ function isAdmin(obj){
 }
 
 function getEmail(obj){
-    return `${obj.firstName}.${obj.lastName}@codeimmersives.com`
+    return `${obj.firstName.toLowerCase()}.${obj.lastName.toLowerCase()}@codeimmersives.com`
 }
 
 // ┌─────────────────────────────────────┐
