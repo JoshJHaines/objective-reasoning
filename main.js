@@ -15,6 +15,29 @@ function getPlaylistLength(obj){
     return obj.songs.length
 }
 
+//
+function getHardestHomework(obj){
+    lowScore = 100
+    hardy = obj.name //where score === lowScore
+    if (obj === undefined){
+        return ''
+    }
+    for (averageScore in obj){
+        if (averageScore < lowScore){
+            highScore = averageScore
+        }
+    }
+    return obj.name
+}
+
+function createPhonebook(name,phone){
+    let obj = {};
+    for (let i = 0; i < name.length; i++){
+        obj[name[i]] = phone[i];
+    }
+    return obj;
+}
+
 // ┌─────────────────────────────────────┐
 // │ Do not modify code below this line. │
 // └─────────────────────────────────────┘
