@@ -17,12 +17,15 @@ function getPlaylistLength(obj) {
 
 
 function getHardestHomework(obj){
-    arrOfScores = []
-    lowestScore = Math.min(...arrOfScores)
-    lowestScore
+    // arrOfScores
     if (obj[0]!== undefined){
-        for (score of obj){
-            arrOfScores.push(obj.averageScore)
+        arrOfScores = []
+        for (const score of obj){
+            console.log(score.averageScore)
+            arrOfScores.push(score.averageScore)
+            lowestScore = Math.min(...arrOfScores)
+            // return score.name
+            lowestScore
         }
         return obj[0].name
     } else {
