@@ -24,19 +24,35 @@ function getHardestHomework(obj){
             console.log(score.averageScore)
             arrOfScores.push(score.averageScore)
             lowestScore = Math.min(...arrOfScores)
-            // return score.name
             lowestScore
+            lowestIndex = obj.indexOf(lowestScore)
+            lowestIndex
+
+            // return score.name
+            //return obj[indexOf(lowestScore)].name
         }
         return obj[0].name
     } else {
         return ''
     }
 }
-test = getHardestHomework([
-    { name: 'homework 1', averageScore: 50 }
+test1 = getHardestHomework([
+    { name: 'some hw', averageScore: 99 },
+    { name: 'other hw', averageScore: 20 },
+    { name: 'third hw', averageScore: 3 }
 ])
 
-test
+test1
+
+test2 = getHardestHomework([
+    { name: 'homework 1', averageScore: 50 }
+])
+//Should return homework 1
+test2
+
+test3 = getHardestHomework([])
+// Should return empty str
+test3
 
 function createPhonebook(name, phone) {
 	let obj = {};
