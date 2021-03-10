@@ -20,18 +20,18 @@ function getHardestHomework(obj){
     // arrOfScores
     if (obj[0]!== undefined){
         arrOfScores = []
+        arrOfScores
         for (const score of obj){
             console.log(score.averageScore)
             arrOfScores.push(score.averageScore)
-            lowestScore = Math.min(...arrOfScores)
-            lowestScore
-            lowestIndex = obj.indexOf(lowestScore)
-            lowestIndex
-
-            // return score.name
-            //return obj[indexOf(lowestScore)].name
+            arrOfScores
         }
-        return obj[0].name
+        arrOfScores
+        lowestScore = Math.min(...arrOfScores)
+        lowestScore
+        lowestIndex = arrOfScores.indexOf(lowestScore)
+        lowestIndex
+        return obj[lowestIndex].name
     } else {
         return ''
     }
