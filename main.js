@@ -22,7 +22,6 @@ function getHardestHomework(obj){
         arrOfScores = []
         arrOfScores
         for (const score of obj){
-            console.log(score.averageScore)
             arrOfScores.push(score.averageScore)
             arrOfScores
         }
